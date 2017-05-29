@@ -1,58 +1,48 @@
-<!DOCTYPE html>
-<html>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-<head>
-  <title>Positioning</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-
-<body>
-
-<div id="fixed">
-  &lt;div&gt;<br>
-  position: fixed
-</div>
-
-<div class="wrapper">
-  
-  <section id="content">
-    <!-- Section will hold all the paragraphs -->
-
-    <h1>Heading</h1>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a hendrerit ex, at blandit
-    sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Quisque finibus felis sem, non pulvinar oio fermentum ve. Nunc varius tempus scelerisque. Curabitur congue magna vitae velit dictum, eu finibus neque bibendum. In hac gabitasse platea distumst. Aliquam fermentum
-    lobortis felis, in feugiat diam congue ac.</p>
-
-    
-    <div id="relative">
-      &lt;div&gt;<br>
-      position: relative
-
-      <div id="absolute">
-        &lt;div&gt;<br>
-        position: absolute
-      </div>
-    </div>
-
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-
-  </section>
-
-
-
-
-</div>
-
-
-</body>
-
-</html>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

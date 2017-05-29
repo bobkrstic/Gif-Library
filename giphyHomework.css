@@ -7,15 +7,26 @@ header {
 }
 
 #buttonsDump {
-	background: rgb(225, 245, 254);
-	/*width: 100%;*/
-	/*margin: 30px;
-	padding: 20px;*/
+	/*background: rgb(225, 245, 254);*/
+	width: 80%;
+	margin: 30px;
+	padding: 20px;
 }
 
+
+.gifsDisplay {
+	margin-left: 40px;
+}
+
+
 .inputDisplay {
-	background: rgb(179, 229, 252);
+	/*background: rgb(179, 229, 252);*/
 	height: 200px;
+	/*margin: 30px;*/
+	width: 80%;
+	margin-top: 40px;
+	margin-left: 10px;
+
 }
 
 #labelText {
@@ -29,12 +40,12 @@ header {
 
 .buttonClass, #submitButton {
 	border-radius: 12px;
-	border: 2px solid #4CAF50;
+	/*border: 2px solid #4CAF50;*/
 	margin: 3px;
 }
 
 .buttonClass:hover, #submitButton:hover {
-    background-color: #4CAF50; /* Green */
+    background-color: #eee; /* Green */
     color: white;
 }
 
@@ -58,8 +69,8 @@ header {
 	/*top: 0; right: 0;*/
 	/*float: left;*/
 	clear: both;
-	width: 120px;
-	height: 120px;
+	width: 220px;
+	height: 220px;
 	margin: 5px;
 	/*z-index: -1;*/
 }
@@ -75,6 +86,7 @@ header {
 .lineBreak {
 	clear: both;
 	background: black;
-	height: 30px;
+	height: 0.5px;
 	padding-top: 20px;
+	width: 93%;
 }

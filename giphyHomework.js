@@ -65,7 +65,7 @@ var topics = ["Donald Trump", "Soccer", "Train", "Family Guy", "Dogs", "Ace Vent
                                 }  
                     });
 
-            $(".gifsDisplay").prepend("<h1 class='lineBreak'>");
+            $(".gifsDisplay").prepend("<h5 class='lineBreak'>");
         });
         
       }
@@ -99,7 +99,6 @@ $("#submitButton").on("click", function(event){
 	var gifName = $("#addButtonText").val().trim();
 
 	topics.push(gifName);
-
 	renderButtons();
 });
 
