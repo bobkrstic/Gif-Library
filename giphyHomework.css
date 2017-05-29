@@ -1,0 +1,44 @@
+
+.wrapper {
+	background: #eee;
+}
+
+#buttonsDump {
+	background: rgb(225, 245, 254);
+	width: 100%;
+	margin-bottom: 30px;
+	/*height: 250px;*/
+}
+
+/*.gifsDisplay {
+	background: rgb(129, 212, 250);
+	margin-right: 0px;
+	height: 400px;
+
+}*/
+
+.inputDisplay {
+	background: rgb(179, 229, 252);
+	height: 200px;
+}
+
+#labelText {
+	padding-top: 30px;
+}
+
+#addButtonText {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+#footerPart {
+	height: 50px;
+	background: #eee;
+}
+
+.gif {
+	float: left;
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+}
