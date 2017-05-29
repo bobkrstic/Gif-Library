@@ -17,79 +17,57 @@ var topics = ["Donald Trump", "Soccer", "Train", "Family Guy", "Dogs", "Ace Vent
 
         	console.log(response);
         for (var i = 0; i < response.data.length; i++) {
-          // Creating a div to hold the movie
+          // Creating a div to hold the gif
           var gifDiv = $("<div class='gifDiv'>");
 
-          // Storing the rating data
-          // var rating = response.data[i].rating;
+          var still = response.data[i].images.original_still.url;
+          var gif = response.data[i].images.original.url;
+          var image = $("<img>");
 
-          // // Creating an element to have the rating displayed
-          // var pOne = $("<div>").text("Rating: " + rating);
-
-          // Displaying the rating
-          // gifDiv.append(pOne);
-
-          var imgURL = response.data[i].images.downsized.url;
-
-          // Creating an element to hold the image
-          var image = $("<img>").attr("src", imgURL);
-
-
+          image.attr("src", still);
+          image.attr("data-still", still);
+          image.attr("data-gif", gif);
           image.addClass("gif");
+
+
+
+          var rating = response.data[i].rating;
+          rating = rating.toUpperCase();
+          var ratingPar = $("<p>");
+          ratingPar.text("Rating: " + rating);
+          ratingPar.addClass("ratingP");
+          gifDiv.append(ratingPar);
+
+
+
 
           // Appending the image
           gifDiv.append(image);
 
           // Putting the entire movie above the previous movies
           $(".gifsDisplay").prepend(gifDiv);   
-
+          
 	     }
 
-        //   	$(".playPause").on("click", function(){
+                    $(".gif").click(
+                     function()
+                      {
+                              
+                              var currentSource = this.getAttribute("src");
+                              var stillUrl = this.getAttribute("data-still");
+                              var gifUrl = this.getAttribute("data-gif");
 
-    				// console.log("something");
+                              if (currentSource === stillUrl) {
+                                  $(this).attr("src", gifUrl); 
+                                
+                                } else {
+                                  $(this).attr("src", stillUrl);   
+                                }  
+                    });
 
-    				// $(this).stop();
-       	// 			 // function()
-        // 				// {
-        // 				  var src = $(this).attr("src");
-        // 				  $(this).attr("src", src.replace(/\.gif$/i, ".img"));
-       	// 				//  },
-       	// 			 // function()
-       	// 				//  {
-       	// 				//    var src = $(this).attr("src");
-        // 				//   $(this).attr("src", src.replace(/\.jpg$/i, ".gif"));
-        // 		});
-
-
-        //$(document).ready(function()
-// {
-    $(".gif").click(
-        function()
-        {
-          // var src = $(this).attr("src");
-          // $(this).attr("src", src.replace(/\.gif$/i, ".png"));
-          $(this).hidden();
-        // },
-        // function()
-        // {
-        //   var src = $(this).attr("src");
-        //   $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+            $(".gifsDisplay").prepend("<h1 class='lineBreak'>");
         });
-// });
-
-
-
-
-        });
-
-
-        // $(document).ready(function()
-		// {
-    		
-		// });
-
-
+        
       }
 		
 				
@@ -103,7 +81,7 @@ function renderButtons() {
 	for (var i = 0; i < topics.length; i++) {
 		var a = $("<button>");
 	
-		a.addClass("gifClass");
+		a.addClass("buttonClass");
 
 		a.attr("gifName", topics[i]);
 
@@ -125,7 +103,7 @@ $("#submitButton").on("click", function(event){
 	renderButtons();
 });
 
-$(document).on("click", ".gifClass", displayMovieInfo);
+$(document).on("click", ".buttonClass", displayMovieInfo);
 
       // Calling the renderButtons function to display the intial buttons
       renderButtons();
