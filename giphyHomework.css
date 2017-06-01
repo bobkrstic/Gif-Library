@@ -87,7 +87,8 @@ div {
 }
 
 .gifClicked {
-	box-shadow: 2px 2px 20px green;
+	box-shadow: 2px 2px 30px blue;
+	border: 2px solid black;
 }
 
 
