@@ -12,7 +12,7 @@ var topics = ["Tennis", "Soccer", "Nascar", "Family Guy", "Dogs", "Ace Ventura",
         var x = $(this).attr("gifName");
 
         // accessing the api and applying the key
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         // Creating an AJAX call for the specific gif button being clicked
         $.ajax({
