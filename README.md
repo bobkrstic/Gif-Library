@@ -1,1 +1,1 @@
-# giphyHomework
+This application will allow you to get the gif files from the API library based on your search. You will be able to create a button on the screen, for example "Cats", and later on as you click on that button, the program will display gifs containing cats in them. 
